@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+
+  background-color: blue;
+  width: 111rem;
+  margin-top: 9rem;
+}
