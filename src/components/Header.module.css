@@ -1,3 +1,34 @@
 .container {
-  background-color: red;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  height: 4rem;
+  cursor: pointer;
+}
+
+.icon {
+  width: 4rem;
+  height: 1.7rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 23.44em) {
+  .container {
+    width: 100%;
+
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .icon {
+    display: block;
+  }
+
+  .visible {
+    display: block;
+  }
 }

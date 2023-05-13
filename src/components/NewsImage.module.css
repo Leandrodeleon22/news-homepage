@@ -1,0 +1,54 @@
+.container {
+  grid-column: 1 /-1;
+  display: flex;
+  justify-content: space-between;
+  margin: 7.3rem 0 13rem 0;
+}
+
+.info {
+  display: flex;
+  width: 35rem;
+}
+
+.info img {
+  width: 10rem;
+  height: 12.7rem;
+  margin-right: 1rem;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c8c7cc;
+  margin-bottom: 1rem;
+}
+
+.info h3 {
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 800;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.info h3:hover {
+  color: #e76064;
+}
+
+.info p {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  color: #606061;
+  cursor: auto;
+}
+
+@media only screen and (max-width: 23.44em) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 9rem;
+  }
+  .info {
+    margin-bottom: 0;
+  }
+}

@@ -23,8 +23,9 @@
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
 
-  --headingFont: "Space Mono", Sans-Serif;
-  --bodyFont: "Space Mono", Sans-Serif;
+  --headingFont: "Inter", sans-serif;
+  /* font-family: 'Overpass', sans-serif; */
+  --bodyFont: "Inter", sans-serif;
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
@@ -52,10 +53,8 @@
 
 html {
   font-size: 62.5%;
-
-  /* @media only screen and (max-width: 23.44em) {
-    font-size: 50%;
-  } */
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -71,6 +70,18 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--textColor);
+  width: 144rem;
+  height: 100vh;
+  margin: 0;
+}
+
+@media only screen and (max-width: 23.44em) {
+  body {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  html {
+    font-size: 50%;
+  }
 }
 
 p {

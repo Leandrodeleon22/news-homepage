@@ -1,7 +1,22 @@
 .container {
   display: grid;
 
-  background-color: blue;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, minmax(4rem, min-content));
+  grid-gap: 3rem;
+
   width: 111rem;
   margin-top: 9rem;
+}
+
+@media only screen and (max-width: 23.44em) {
+  .container {
+    width: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+    /* height: 100%; */
+    padding-bottom: 0;
+  }
 }
